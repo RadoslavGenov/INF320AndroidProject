@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.aubg.liverpool">
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
@@ -18,12 +19,17 @@
             </intent-filter>
         </activity>
 
+         <service
+         android:name=".MusicService"
+         android:enabled="true"
+         android:exported="true" />
+
+        <activity android:name=".DetailActivity" />
+
         <service
             android:name=".MusicService"
             android:enabled="true"
-            android:exported="true" />
-
-        <activity android:name=".DetailActivity"></activity>
+            android:exported="true"></service>
     </application>
 
 </manifest>
