@@ -14,7 +14,6 @@ import java.io.Console;
 
 public class TextFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        System.out.print("text fragment");
         return inflater.inflate(R.layout.text_fragment, container, false);
     }
 }

@@ -17,7 +17,7 @@ public class DetailActivity extends AppCompatActivity {
 
     public void selectFragment(View view){
         Fragment fr;
-        if(view == findViewById(R.id.button2)){
+        if(view == findViewById(R.id.button1)){
             fr = new TextFragment();
         } else {
             fr = new VideoFragment();
