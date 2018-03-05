@@ -1,13 +1,13 @@
 package edu.aubg.liverpool;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class GridActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +19,11 @@ public class MainActivity extends AppCompatActivity {
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "" + position, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(GridActivity.this, "" + position, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
+                startActivity(intent);
             }
         });
     }
+
 }
