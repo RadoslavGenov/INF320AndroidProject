@@ -13,6 +13,10 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+//        if(savedInstanceState == null){
+//            getSupportFragmentManager().beginTransaction().replace(R.id.,new android.support.v4.app.Fragment()).commit();
+//        }
     }
 
     public void selectFragment(View view){
